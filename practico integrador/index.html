@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>práctico integrador</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <style>
+        header {
+            background-image: url("header.jpg");
+            background-size: 100% 100%;
+            height: 600px; 
+            width: 100%;
+        }
+        .logo {
+            margin-left:2.5%;
+        }
+
+        nav{
+            word-spacing: 20px;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            color:aliceblue;
+            list-style-type: none; 
+            margin-top:15%;
+        }
+
+        nav ul{
+            list-style:none;
+        }
+
+        nav ul li{
+            display:inline;
+        }
+
+        .h2style {
+            color:white;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+            margin-left:2.5%;
+            position:relative;
+            top:45%;
+            line-height: 1.6;
+        }
+
+        #h2title {
+            color:black;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+            top:100%;
+            text-align: center;
+        }
+
+        .footer {
+            background-image: url("encuentra.jpg");
+            background-size: 100% 100%;
+            height: 300px; 
+            width: 100%;
+        }
+
+        #footertext {
+            color:white;
+            font-family: 'Lato', sans-serif;
+            margin-left:5%;
+            font-weight:bold;
+        }
+
+        .buttonContacto{
+            font-size: 25px;
+            color: blanchedalmond;
+            background-color: darkorange;
+            border-color: darkorange;
+            border-style: solid;
+            margin-left:5%;
+        }
+
+        #barra-footer{
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            color:rgb(36, 9, 9);
+            list-style-type: none; 
+
+        }
+
+        .finalFooter{
+            background-color: rgb(56, 56, 56);
+            text-decoration: none;
+            float: inline-end;
+            text-align: right;
+            padding: 37px;
+            color: blanchedalmond;   
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .links {
+            flex-wrap: wrap;
+        }
+
+        .flex-container2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .flex-container3 {
+            display: flex;
+            align-items: center;
+            padding:5px;
+        }
+
+        .greenButton {
+            color: aliceblue;
+            background-color: chartreuse;
+            font-style: bolder;
+            float: right;
+            border-radius: 2%;
+            border-color: chartreuse;
+            border-style: solid;
+        }
+
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left:20%;
+            margin-right:20%;
+        }
+
+        .cardStyleTitle {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            color:rgb(0, 0, 0);
+            font-weight: bold; 
+            align-items: flex-end;
+        }
+
+        .cardStyleParagraph {
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+            color:rgb(0, 0, 0);
+            font-weight: lighter; 
+            align-content:center;
+        }
+
+        .div1{
+            position: relative;
+            display: inline-block;
+        }
+
+        .margin-child {
+            margin:20px;
+        }
+
+        .orangeButton {
+            color: aliceblue;
+            background-color: darkorange;
+            font-style: bold;
+            border-color: darkorange;
+            border-style: solid;
+        }
+        
+        .houseCards {
+            display: flex;
+            align-items: center;
+            background-color: lightgray;
+            border:10%;
+            border-color:darkgray;
+            margin-left:10%;
+            margin-right:10%;
+        }
+
+        .prices {
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            color:rgb(71, 223, 71);
+            font-weight: bold;
+        }
+
+        .card2 {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imageStyle {
+            max-width:100%;
+            height:auto;
+        }
+
+        .cards {
+            color:black;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            font-size:22px;
+        }
+
+        .paragraph {
+            color:black;
+            font-weight: normal;
+            font-family: 'Lato', sans-serif;
+            text-align: left;
+            font-size:18px;
+        }
+
+        #card{
+            position: relative
+        }
+
+        .orangeButton {
+            background-color: darkorange;
+            color:white;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+            width:100%;
+            height:7.5%;
+            border-color: darkorange;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="flex-container">
+            <div>
+                <img class="logo" src ="logo.svg" style="margin-top: 10%; margin-left: 10%;"/>
+            </div>
+            <br>
+            <div class="links">
+                <nav>
+                    <ul class="tabla-nav">
+                        <li>Nosotros</li>
+                        <li>Anuncios</li>
+                        <li>Blog</li>
+                        <li>Contacto</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <br>
+        <h2 class="h2style">Venta de Casas y Departamentos <br> Exclusivos de lujo</h2>
+    </header>
+
+    <br>
+
+    <div>
+        <h2 id="h2title">Más Sobre Nosotros</h2> 
+    </div>
+
+    <br>
+
+
+    <div class="cartitas" style="display:flex; margin-left:10%;">
+        <div class="carta">
+            <h1 class="cards">SEGURIDAD</h1>
+            <img src="icono1.svg" class="center"/>
+            <p class="paragraph" style="text-align:center;">Sed auctor felis purus gravida facilisis. Vivamus vulputate dui ut odio sagittis gravida.
+                Vivamus vulputate dui ut odio sagittis gravida.
+            </p>
+        </div>
+
+        <div class="carta">
+            <h1 class="cards">EL MEJOR PRECIO</h1>
+            <img src="icono2.svg" class="center"/>
+            <p class="paragraph" style="text-align:center;">Sed auctor felis purus gravida facilisis. Vivamus vulputate dui ut odio sagittis gravida.
+                Vivamus vulputate dui ut odio sagittis gravida.
+            </p>
+        </div>
+
+        <div class="carta" style="margin-right:10%;">
+            <h1 class="cards">A TIEMPO</h1>
+            <img src="icono3.svg" class="center" style="height:40%;"/>
+            <p class="paragraph" style="text-align:center;">Sed auctor felis purus gravida facilisis. Vivamus vulputate dui ut odio sagittis gravida.
+                Vivamus vulputate dui ut odio sagittis gravida.
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <h2 id="h2title">Casas y Dptos en Venta </h2> 
+    </div>
+
+    <br>
+
+
+    <div id="card" style="display:flex; margin-right:10%;">
+
+        <div style="background-color: gainsboro; margin-left:10%; border-color:darkgray;">
+            <img src="anuncio1.jpg" class="imageStyle"/>
+            <h1 class="cards">  Casa de lujo en el lago </h1>
+            <p class="cards" style="font-weight:normal; text-align:left; margin-left:2.5%;">Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
+            <p class="paragraph" style="color:chartreuse; font-weight:bold; font-size:20px">$3.000.000</p>
+            <div class="icons" style="display:flex;">
+                <img src="icono_wc.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%;">3</p>
+                <img src="icono_estacionamiento.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%;">3</p>
+                <img src="icono_dormitorio.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%; ">2</p>
+            </div>
+            <button class="orangeButton">VER PROPIEDAD</button>
+        </div>
+
+        <div style="background-color: gainsboro; margin-left:1.5%;">
+            <img src="anuncio2.jpg" class="imageStyle"/>
+            <h1 class="cards">Casa terminados de lujo</h1>
+            <p class="cards" style="font-weight:normal; text-align:left; margin-left:2.5%;">Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
+            <p class="paragraph" style="color:chartreuse; font-weight:bold; font-size:20px;">$3.000.000</p>
+            <div class="icons" style="display:flex;">
+                <img src="icono_wc.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%;">3</p>
+                <img src="icono_estacionamiento.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%;">3</p>
+                <img src="icono_dormitorio.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%; ">2</p>
+            </div>
+            <button class="orangeButton">VER PROPIEDAD</button>
+        </div>
+
+        <div style="background-color: gainsboro; margin-left:1.5%;">
+            <img src="anuncio3.jpg" class="imageStyle"/>
+            <h1 class="cards">Casa con alberca</h1>
+            <p class="cards" style="font-weight:normal; text-align:left; margin-left:2.5%;">Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
+            <p class="paragraph" style="color:chartreuse; font-weight:bold; font-size:20px;">$3.000.000</p>
+            <div class="icons" style="display:flex;">
+                <img src="icono_wc.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%;">3</p>
+                <img src="icono_estacionamiento.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%;">3</p>
+                <img src="icono_dormitorio.svg" style="margin-left:2.5%;"/>
+                <p style="font-family:'Lato'; font-weight:bold; margin-left:2.5%; ">2</p>
+            </div>
+            <button class="orangeButton">VER PROPIEDAD</button>
+        </div>
+    </div>
+
+
+    <br>
+
+    <div>
+        <br> <br>
+        <button class="orangeButton" style="background-color:chartreuse; border-color:chartreuse; width:auto; margin-left:85%;">Ver todas</button>
+        <br> <br>
+    </div>
+
+    <footer class="footer" class="flex-container2"></div>>
+        <div class="margin-child">
+            <h2 id="footertext">Encuentra la casa de tus sueños</h2>
+            <br>
+            <h2 id="footertext" style="font-weight:normal">Llene el formulario de Contacto y un asesor se pondrá en contacto contigo a la brevedad </h2>
+            <br> <br>
+            <button class="orangeButton" style="width:auto; margin-left:5%;">CONTÁCTANOS</button>
+        </div> 
+        </div>
+        <br> <br> <br> <br> <br> <br>
+    </footer>
+    <div style="background-color:rgba(82, 82, 82, 0.993); overflow:hidden;">
+        <h4 style="display:flex; align-items:left; justify-content:left; margin-top:2%; margin-left:5%;">
+            <a href="#"  style="float: left; color: white; text-decoration: none;"> &nbsp; Nosotros </a>
+            <a  href="#" style="float: left; color: white; text-decoration: none;"> &nbsp; Anuncio </a>
+            <a  href="#" style="float: left; color: white; text-decoration: none;"> &nbsp; Blog </a>
+            <a  href="#" style="float: left; color: white; text-decoration: none;"> &nbsp; Contacto </a>
+        </h4>
+        
+        <p style="display:flex; color:white; float: right; justify-content:right; margin-right:10%; margin-top:-2.5%;">Agostina Ietri comisión 2108</p>
+</div>
+
+</body>
+</html>
